@@ -1,0 +1,575 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+    <style>
+     ul li{
+        list-style: none;
+        padding: 10px;
+        cursor: pointer;
+     }
+     .button{
+        opacity: 0.6;
+     }
+     .button:hover{
+       opacity: 0.8;
+     }
+     .video:hover{
+        color:orangered;
+     }
+     .fa-briefcase{
+        font-size: 40px;
+     }
+     .fa-briefcase:hover{
+        background-color: red;
+     }
+     .fa-airbnb{
+        font-size: 40px;
+     }
+     .fa-airbnb:hover{
+        background-color: red;
+     }
+     .fa-box{font-size: 40px;
+    }
+    .fa-box:hover{
+        background-color: red;
+    }
+    .bgimg{
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/713/705/65/breakfast-4k-hd-widescreen-wallpaper-preview.jpg);
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .eventimg1{
+        background-image: url(https://5.imimg.com/data5/LG/ZP/VV/SELLER-13579218/balloon-decorations-for-events-500x500.jpg);
+        width: 30%;
+        height:500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px 30px;
+        color: white;
+        margin: 0px 10px;
+    }
+    .eventimg2{
+        background-image: url(https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_640.jpg);
+        width: 30%;
+        height:500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px 30px;
+        color: white;
+        margin: 0px 10px ;
+    }
+    .eventimg3{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWm0-H0AKcv7dmXJKWQwusudU6oxNPDIdrew&s);
+        width: 30%;
+        height:500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px 30px;
+        color: white;
+        margin: 0px 10px;
+    }
+    .chefs1{
+        background-image: url(https://media.gettyimages.com/id/683643480/es/foto/el-chef-ejecutivo.jpg?s=612x612&w=gi&k=20&c=57JPDX7-EVOTMv9BfWBd-KYlKYqKCRu8eyEfAcV_8IY=);
+        width:80% ;
+        height: 400px;
+        background-size: cover;
+    }
+    .chefs2{
+        background-image: url(https://images-cdn.ubuy.co.in/6467c6c6ce61487a0139b980-chef-hat-with-personalized-embroidered.jpg);
+        width:80% ;
+        height: 400px;
+        background-size: cover;
+    }
+    .chefs3{
+        background-image: url(https://img.freepik.com/premium-photo/food-cooking-profession-people-concept-happy-male-chef-cook-serving-cleaning-plate_763111-6874.jpg);
+        width:80% ;
+        height: 400px;
+        background-size: cover;
+    }
+    .map{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjlML16AHvCbOQ5uvrs3gn4-F0eB7BCLoiTw&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        height: 600px;
+    }
+    .a1{
+        transition: 1s;
+    }
+    .a1:hover{
+        scale: 1.1;
+        transition: 1s;
+    }
+    .a2{
+        transition: 1s;
+    }
+    .a2:hover{
+        scale: 1.1;
+        transition: 1s;
+    }
+    .a3{
+        transition: 1s;
+    }
+    .a3:hover{
+        scale: 1.1;
+        transition: 1s;
+    }
+    .b1{
+        transition: 1s;
+    }
+    .b1:hover{
+        scale: 1.1;
+        transition: 1s;
+    }
+    .b2{
+        transition: 1s;
+    }
+    .b2:hover{
+        scale: 1.1;
+        transition: 1s;
+    }
+    .b3{
+        transition: 1s;
+    }
+    .b3:hover{
+        scale: 1.1;
+        transition: 1s;
+    }
+    .b4{
+        transition: 1s;
+    }
+    .b4:hover{
+        scale: 1.1;
+        transition: 1s;
+    }
+    .b5{
+        transition: 1s;
+    }
+    .b5:hover{
+        scale: 1.1;
+        transition: 1s;
+    }
+    .d1{
+        transition: 1s;
+    }
+    .d1:hover{
+        scale: 1.1;
+        transition: 1s; 
+    }
+    .d2{
+        transition: 1s;
+    }
+    .d2:hover{
+        scale: 1.1;
+        transition: 1s; 
+    }
+    .d3{
+        transition: 1s;
+    }
+    .d3:hover{
+        scale: 1.1;
+        transition: 1s; 
+    }
+    .d4{
+        transition: 1s;
+    }
+    .d4:hover{
+        scale: 1.1;
+        transition: 1s; 
+    }
+    .bgimg0{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        animation: DemoImg 2s ease-in-out infinite alternate-reverse ;
+        transform: scale(1.1);
+    } 
+
+    @keyframes DemoImg{
+        0%{
+            transform: translateY(30px);
+            transition: 2s;
+        }
+        100%{
+            transform: translateY(-30px);
+            transition: 2s;
+        }
+    }
+    .fa-square-x-twitter{
+        font-size: 30px;
+        opacity: 0.5;
+    }
+    .fa-facebook{
+        font-size: 30px; 
+        opacity: 0.5;
+    }
+    .fa-instagram{
+        font-size: 30px; 
+        opacity: 0.5;
+    }
+    .fa-linkedin{
+        font-size: 30px; 
+        opacity: 0.5;
+    }
+    *{
+       overflow-x: hidden;
+    }
+
+
+    </style>
+ </head>
+ <body>
+    <section style="font-family: Gravitas One, serif;"> 
+    <div style="display: flex; align-items: center; position: fixed;top: 0px; background-color: white; padding:15px 0px;width: 100%; z-index: 999;"> 
+    <h1 style="padding-left: 20px;">Yummy.</h1>
+    <div> 
+    <ul style="display: flex;background-color: white;"> 
+       <a style="text-decoration: none;" href="#home"><li class="button" style="padding-left: 40px;">Home</li></a>
+       <a style="text-decoration: none;" href="#about"><li class="button">About</li></a>
+       <a style="text-decoration: none;" href="#menu"><li class="button">Menu</li></a>
+       <a style="text-decoration: none;" href="#events"><li class="button">Events</li></a>
+       <a style="text-decoration: none;" href="#chefs"><li class="button">Chefs</li></a>
+       <a style="text-decoration: none;" href="#gallary"> <li class="button">Gallary</li></a>
+        <li class="button">Dropdown</li>
+        <a style="text-decoration: none;" href="#contact"> <li class="button">Contact</li></a>
+    </ul>
+</div>
+<a href="#table"> <button type="button" style="padding: 10px 20px; background-color: red;color: white; border-radius: 20px; margin-left: 150px;cursor: pointer;">Book a table</button></a>
+</div>
+</section>
+<section id="home" style="margin-top: 150px;background-color:ghostwhite;">
+    <div style="display: flex;justify-content: space-around; align-items: center;padding: 100px 0px;"> 
+    <div style="width: 40%; margin-left: 80px;">
+        <h1 style="font-family:cursive; font-size: 40px;">Enjoy Your Healthy</h1>
+        <h1 style="font-family:cursive; font-size: 40px;">Delicious Food</h1>
+        <p style="font-size: 20px;">We are team of talented designers making<br> websites with Bootstrap</p><br>
+        <div style="display: flex;justify-content: space-around; cursor: pointer;margin-right: 150px;"> 
+        <a href="#table"> <button type="button" style="padding: 10px 30px; background-color: red;color: white; border-radius: 20px;cursor: pointer;">Book a table</button></a>
+        <div style="display: flex;justify-content: center;align-items: center;"> 
+        <i style="color: red;padding-right: 30px;" class="fa-solid fa-video"></i>
+        <p class="video"> Watch Video</p></div>
+    </div>
+    </div>
+    <div class="bgimg0">
+        <img style="width: 70%;" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/hero-img.png">
+    </div>
+</div>
+</section>
+<section id="about">
+    <p style="opacity: 0.5;text-align: center;font-size: 15px;margin-top: 50px;">ABOUT US</p>
+    <p style="text-align: center;opacity: 0.8;font-family: cursive;font-size:30px;margin-top: 50px;">LEARN MORE <span style="color: red;"> ABOUT US </span></p>
+    <div style="display: flex;justify-content: space-around;"> 
+<div style="width: 50%;">
+    <img style="width: 100%;" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/about.jpg">
+    <h2 style="border: 2px solid dimgray;text-align: center;padding: 10px 0px ;">Book a Table<br>  +1 5589 55488 55</h2>
+</div>
+<div style="width: 35%; font-size: 20px;">
+    <div style="margin-right: 35px;"> 
+    <p style="opacity: 0.7;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p> <i style="color: red;" class="fa-solid fa-circle-check"></i>  Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p> <i style="color: red;" class="fa-solid fa-circle-check"></i>  Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+    <p> <i style="color: red;" class="fa-solid fa-circle-check"></i>  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+</div>
+    <div>
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/G-YVRQ-di3w?si=f8KzGJvX_7dVPNkH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+</div><br><br><br>
+<div style="display: flex;justify-content: space-around;align-items: center;background-color:gainsboro;padding: 60px 0px ;"> 
+<div style="background-color:rgb(216, 18, 18); width: 25%; height: 400px;text-align: center;padding: 10px 20px;margin-left: 40px;color: white;" class="d1">
+    <h1 style="font-size: 40px; text-align: left;">Why Choose Yummy</h1>
+    <P style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</P><br><br>
+    <a href="#home"> <button type="button" style="padding: 10px 30px;border-radius: 20px; background-color: darkred; color: white;cursor: pointer;">Learn More <i class="fa-solid fa-angle-right"></i></button></a>
+</div>
+<div class="d2" style=" width: 18%; height: 400px;text-align: center; border: 1px solid white; background-color: white;opacity: 0.8;;"><br><br><br><br>
+    <i style="padding-bottom: 20px;" class="fa-solid fa-briefcase"></i>
+    <h2>Corporis voluptates officia eiusmod</h2>
+    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+</div>
+<div class="d3" style=" width: 18%; height: 400px;text-align: center;border: 1px solid white; background-color: white;opacity: 0.8;">
+    <br><br><br><br> <i style="padding-bottom: 20px;" class="fa-brands fa-airbnb"></i>
+    <h2>Ullamco laboris ladore lore pan</h2>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt 
+        
+        culpa qui officia deserunt</p>
+</div>
+<div class="d4" style=" width: 18%; height: 400px;text-align: center;border: 1px solid white; background-color: white;margin-right: 40px;opacity: 0.8;"><br><br><br><br>
+    <i style="padding-bottom: 20px;" class="fa-solid fa-box"></i>
+    <h2>Labore consequatur incidid dolore</h2>
+    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+</div>
+</div>
+<div class="bgimg" style="display: flex;justify-content: space-around;align-items: center;font-size: 40px;color: white;">
+<p><b> 232 </b><br ><span style="opacity: 0.7;font-size: 20px;"> clients</span></p>
+<p><b> 521 </b><br><span style="opacity: 0.7;font-size: 20px;"> Projects</span></p>
+<p><b> 1248 </b><br> <span style="opacity: 0.7; font-size: 20px;"> Hours Of Support</span></p>
+<p><b> 31 </b><br><span style="opacity: 0.7; font-size: 20px;"> Workers</span></p>
+</div>
+</section>
+<section id="menu">
+    <div> 
+    <p style="opacity: 0.5;text-align: center;font-size: 15px;margin-top: 50px;">OUR MENU</p>
+    <p style="text-align: center;opacity: 0.8;font-family: cursive;font-size:30px;margin-top: 50px;">CHECK OUR <span style="color: red;"> YUMMY MENU </span></p>
+</div>
+    <div style="display: flex;justify-content: center;font-size: 20px;"> 
+     <p style="padding: 0px 20px;">Starters</p>
+     <p style="padding: 0px 20px;">Breakfast</p>
+     <p style="padding: 0px 20px;">Lunch</p>
+     <p style="padding: 0px 20px;">Dinner</p>
+</div>
+<div> 
+    <p style="opacity: 0.5;text-align: center;font-size: 15px;margin-top: 30px;"> MENU</p>
+    <p style="text-align: center;opacity: 0.8;font-family: cursive;font-size:30px;"><span style="color: red;"> Starters </span></p>
+</div>
+<div style="display: flex;justify-content: space-around;align-items: center;"> 
+<div style="margin-left: 80px;text-align: center;">
+    <img style="border-radius: 50px;background-color: white; width: 60%;text-align: center;" src="https://img.lovepik.com/free-png/20211215/lovepik-iron-plate-celery-beef-png-image_401641383_wh1200.png">
+    <p style="font-size: 20px;font-size: 25px;">Magnam Tiste</p>
+    <p style="opacity: 0.7; font-size: 20px;">Lorem, deren, trataro, filede, nerada</p>
+    <p style="color: red;font-size: 30px;">$5.95</p>
+</div>
+<div style="text-align: center;">
+    <img style="border-radius: 50px;background-color: white; width: 60%;text-align: center;" src="https://img.lovepik.com/free-png/20211108/lovepik-delicious-meat-png-image_400572013_wh1200.png">
+    <p style="font-size: 20px;font-size: 25px;">Aut Luia</p>
+    <p style="opacity: 0.7; font-size: 20px;">Lorem, deren, trataro, filede, nerada</p>
+    <p style="color: red;font-size: 30px;">$14.95</p>
+</div>
+<div style="margin-right: 80px;text-align: center;">
+    <br><br>  <img style="border-radius: 50px;background-color: white; width: 60%;text-align: center;" src="https://img.lovepik.com/free-png/20211209/lovepik-small-fried-meat-png-image_401446328_wh1200.png"><br><br><br>
+    <p style="font-size: 20px;font-size: 25px;">Est Eligendi</p>
+    <p style="opacity: 0.7; font-size: 20px;">Lorem, deren, trataro, filede, nerada</p>
+    <p style="color: red;font-size: 30px;">$8.95</p>
+</div>
+</div><br><br>
+<div style="display: flex;justify-content: space-around;align-items: center;"> 
+<div style="margin-left: 80px;text-align: center;">
+    <br>  <br><br>  <img style="border-radius: 50px;background-color: white; width: 60%;text-align: center;" src="https://img.lovepik.com/free-png/20211209/lovepik-farmhouse-fried-meat-png-image_401433266_wh1200.png"><br><br><br>
+    <p style="font-size: 20px;font-size: 25px;">Eos Luibusdam</p>
+    <p style="opacity: 0.7; font-size: 20px;">Lorem, deren, trataro, filede, nerada</p>
+    <p style="color: red;font-size: 30px;">$12.95</p>
+</div>
+<div style="text-align: center;">
+    <img style="border-radius: 50px;background-color: white; width: 60%;text-align: center;" src="https://img.lovepik.com/free-png/20211215/lovepik-iron-plate-celery-beef-png-image_401641383_wh1200.png">
+    <p style="font-size: 20px;font-size: 25px;">Eos Luibusdam</p>
+    <p style="opacity: 0.7; font-size: 20px;">Lorem, deren, trataro, filede, nerada</p>
+    <p style="color: red;font-size: 30px;">$12.95</p>
+</div>
+<div style="margin-right: 80px;text-align: center;">
+    <img style="border-radius: 50px;background-color: white; width: 60%;text-align: center;" src="https://img.lovepik.com/free-png/20211204/lovepik-spicy-rabbit-meat-png-image_401304642_wh1200.png">
+    <p style="font-size: 20px;font-size: 25px;">Laboriosam Direva</p>
+    <p style="opacity: 0.7; font-size: 20px;">Lorem, deren, trataro, filede, nerada</p>
+    <p style="color: red;font-size: 30px;">$9.95</p>
+</div>
+</div><br><br><br> 
+<div style="background-color: ghostwhite;padding: 30px 0px 70px 0px;"> 
+<p style="opacity: 0.5;text-align: center;font-size: 15px;margin-top: 50px;">TESTIMONIALS</p>
+<p style="text-align: center;opacity: 0.8;font-family: cursive;font-size:30px;margin-top: 50px;">What Are They<span style="color: red;">Saying About Us</span></p>
+<div style="display: flex;justify-content: center;">
+    <div style="margin-left: 300px;"> 
+ <p style="width:90%;font-size: 18px;padding-right: 40px; "> <span style="font-size: 30px;color:red;"> " </span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquid eius maxime vitae impedit sit cupiditate culpa accusantium ullam, asperiores dolor distinctio. Porro perferendis commodi, laboriosam iste quibusdam veniam sunt!<span style="font-size: 30px;color:red;"> " </span></p>
+ <p style="font-size: 20PX; font-family: cursive;">ANUJ SHARMA</p>
+ <p style="font-family: cursive;opacity: 0.5;">AI ENGINEER</p>
+ <div style="color: yellow;"> 
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+</div>
+<div style="margin-right: 300px;"> 
+   <img style="border-radius: 50%;width: 100%;padding-top: 30px;" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/testimonials/testimonials-2.jpg">
+</div>
+</div>
+</div>
+</section>
+<section id="events">
+    <div style="display: flex;justify-content: space-around;margin: 80px 0px;"> 
+<div class="eventimg1">
+<h3 style="padding-top: 270px;font-family: cursive;">CUSTOM PARTIES</h3>
+<h1 style="font-size: 30px;text-decoration: underline red;">$289</h1>
+<p>A political party is an organization that coordinates candidates to compete in a particular country's elections. It is common for the members of a party to hold similar ideas about politics, and parties may promote specific ideological or policy goals.</p>
+</div><br>
+<div class="eventimg2">
+<h3 style="padding-top: 270px;font-family: cursive;">CUSTOM PARTIES</h3>
+<h1 style="font-size: 30px;text-decoration: underline red">$499</h1>
+<p>A political party is an organization that coordinates candidates to compete in a particular country's elections. It is common for the members of a party to hold similar ideas about politics, and parties may promote specific ideological or policy goals.</p>
+</div>
+<div class="eventimg3">
+<h3 style="padding-top: 270px;font-family: cursive;">CUSTOM PARTIES</h3>
+<h1 style="font-size: 30px;text-decoration: underline red;">$899</h1>
+<p>A political party is an organization that coordinates candidates to compete in a particular country's elections. It is common for the members of a party to hold similar ideas about politics, and parties may promote specific ideological or policy goals.</p>
+</div>
+</div>
+</section>
+<section id="chefs">
+    <div style="padding-top: 20px;"> 
+        <p style="opacity: 0.5;text-align: center;font-size: 15px;margin-top: 50px;">CHEFS</p>
+        <p style="text-align: center;opacity: 0.8;font-family: cursive;font-size:30px;margin-top: 50px;">OUR <span style="color: red;"> Proffesional Chefs </span></p>
+    </div>
+    <div style="display: flex;justify-content: center;align-items: center;"> 
+    <div style="text-align: center;margin: 0px 0px 0px 100px;" class="a1">
+    <div class="chefs1">
+        </div>
+        <div style="width: 80%;"> 
+        <h1>Walter White</h1>
+        <p style=" opacity: 0.7;">Master Chef</p>
+        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+    </div>
+</div>
+    <div style="text-align: center;" class="a2">
+    <div class="chefs2">
+        </div>
+        <div style="width: 80%;"> 
+        <h1>Sarah Jhonson</h1>
+        <p style="opacity: 0.7;">Patissier</p>
+        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+    </div>
+</div>
+    <div style="text-align: center;margin: 0px 100px 0px 0px;" class="a3">
+    <div class="chefs3">
+        </div>
+        <div style="width: 80%;"> 
+        <h1>William Anderson</h1>
+        <p style="opacity: 0.7;">Cook</p>
+        <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+    </div>
+</div>
+</div>
+</section>
+<section id="table"> 
+<div style="padding-top: 100px;"> 
+    <p style="opacity: 0.5;text-align: center;font-size: 15px;margin-top: 50px;">BOOK A TABLE</p>
+    <p style="text-align: center;opacity: 0.8;font-family: cursive;font-size:30px;margin-top: 50px;">Book Your <span style="color: red;">Stay With Us </span></p>
+</div>
+<div style="display: flex;justify-content: center;margin:50px;"> 
+<div style="width: 40%;">
+    <img style="height: 500px;width: 100%;" src="https://w0.peakpx.com/wallpaper/176/288/HD-wallpaper-coffee-plate-cup-food.jpg">
+</div>
+<div style="width: 60%;background-color: gainsboro;padding: 100px 0px 0px 0px;">
+    <form>
+        <div> 
+        <input style="padding: 10px 20px;margin: 10px;" type="text" id="abcd" placeholder="Your Name">
+        <input style="padding: 10px 20px;margin: 10px;" type="text" id="abcd" placeholder="Your Email">
+        <input style="margin: 10px;padding: 10px 20px" type="number" id="abcd" placeholder="Your Phone">
+    </div>
+    <div style="display: flex;">
+        <input style="padding: 10px 50px;margin: 10px;" type="date" id="abcd">
+        <input style="padding: 10px 71px;margin: 10px;" type="time" id="abcd">
+        <input style="padding: 10px 25px;margin: 10px;" type="number" id="abcd">
+    </div>
+    <input style="padding: 10px 500px 100px 20px;margin: 10px;" type="text" id="abcd" placeholder="massage">
+    <a href="#table"> <button type="button" style="padding: 10px 50px; background-color: red;color: white;cursor: pointer;margin-left: 300px;">Book a table</button></a>
+    </form>
+</div>
+</div>
+</section>
+<section id="gallary" style="background-color: gainsboro;">
+    <div style="padding: 20px;"> 
+        <p style="opacity: 0.5;text-align: center;font-size: 15px;margin-top: 50px;">GALLERY</p>
+        <p style="text-align: center;opacity: 0.8;font-family: cursive;font-size:30px;margin-top: 50px;">Check <span style="color: red;">Our Gallery</span></p>
+    </div>
+    <div style="display: flex;justify-content: center;text-align: center;padding: 0px 0px 80px 0px;">
+        <img class="b1" style="width: 15%;height: 200px;padding: 10px;" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-1.jpg">
+        <img class="b2" style="width: 15%;height: 200px;padding: 10px;" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-2.jpg">
+        <img class="b3" style="width: 18%;height: 210px;padding: px; border: 5px solid red;" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-3.jpg">
+        <img class="b4" style="width: 15%;height: 200px;padding: 10px;" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-4.jpg">
+        <img class="b5" style="width: 15%;height: 200px;padding: 10px;" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-6.jpg">
+    </div>
+</section>
+<section id="contact">
+    <div style="padding-top: 50px;"> 
+        <p style="opacity: 0.5;text-align: center;font-size: 15px;margin-top: 50px;"> CONTACT</p>
+        <p style="text-align: center;opacity: 0.8;font-family: cursive;font-size:30px;margin-top: 50px;">Need Help? <span style="color: red;"> Contact Us </span></p>
+    </div>
+    <div class="map" style="margin: 70px 150px;">
+    </div>
+    <div style="display: flex;justify-content:c center;margin: 0px 150px;"> 
+    <div style="display: flex;border: 2px solid gainsboro;margin: 0px 40px ;">
+        <img style="width: 10%;background-color: red;" src="location-pin-alt-1-svgrepo-com.svg">
+       <div style="padding-left: 20px;"> 
+        <p style="font-size: 25px;">Call Us</p>
+        <p>+1 5589 55488 55</p>
+    </div>
+    </div>
+    <div style="display: flex;border: 2px solid gainsboro;">
+        <img style="width: 10%;background-color: red;" src="call-medicine-svgrepo-com (3).svg">
+       <div  style="padding-left: 20px;"> 
+        <p style="font-size: 25px;"> Address</p>
+        <p> A108 Adam Street, New York, NY 535022</p>
+    </div>
+    </div>
+</div><br><br>
+    <div style="display: flex;justify-content:c center;margin: 0px 150px;"> 
+    <div style="display: flex;border: 2px solid gainsboro;margin: 0px 40px ;">
+        <img style="width: 10%;background-color: red;" src="email-svgrepo-com.svg">
+       <div style="padding-left: 20px;"> 
+        <p style="font-size: 25px;">Email Us </p>
+        <p>info@example.com</p>
+    </div>
+    </div>
+    <div style="display: flex;border: 2px solid gainsboro;">
+        <img style="width: 10%;background-color: red;" src="time-svgrepo-com (1).svg">
+       <div  style="padding-left: 20px;"> 
+        <p style="font-size: 25px;">Opening Hours</p>
+        <p>Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
+    </div>
+    </div>
+</div>
+<div style="margin: 50px 100px;border: 2px solid white;background-color: ghostwhite;padding: 50px 0px;">
+    <form>
+        <div style="display: flex;justify-content: space-around;"> 
+        <input style="padding: 15px 120px;margin: 0px 0px 0px 50px;" type="text" id="abcd" placeholder="Your Name">
+        <input style="padding: 15px 120px;" type="text" id="abcd" placeholder="Your Email">
+    </div><br><br>
+    <div>
+        <input style="padding: 10px 760px 10px 20px;margin: 0px 0px 0px 100px;" type="text" id="abcd" placeholder="Subject">
+    </div><br><br>
+    <div>
+        <input style="padding: 10px 760px 100px 20px;margin: 0px 0px 0px 100px;" type="text" id="abcd" placeholder="Massage">
+    </div><br><br>
+    <button type="button" style="padding: 10px 30px; background-color: red; color: black; border-radius: 20px;margin-left: 500px;cursor: pointer;">Send Massage</button>
+    </form>
+</div>
+
+</section>
+<section style="background-color: black; color: white;padding: 40px 50px;">
+    <div style="display: flex;justify-content: space-around;">  
+        <div>   
+    <i style="font-size: 30px;" class="fa-solid fa-location-dot"></i>
+    <h3>Address</h3>
+    <p>A108 Adam Street<br> New York, NY 535022</p>
+</div>
+<div>
+    <i style="font-size: 30px;" class="fa-solid fa-phone-volume"></i>
+    <h3>Contact</h3>
+    <p>Phone: +1 5589 55488 55<br> Email: info@example.com</p>
+</div>
+<div>
+    <i style="font-size: 30px;" class="fa-regular fa-clock"></i>
+    <h3>Opening Hours</h3>
+    <p>Mon-Sat: 11AM - 23PM<br> Sunday: Closed</p>
+</div>
+<div>
+    <h3>Follow Us</h3><br>
+    <i class="fa-brands fa-square-x-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+</div>
+</div>
+<hr><br>
+<div style="text-align: center;"> 
+<p>© Copyright Yummy All Rights Reserved</p>
+<p>Designed by <span style="color: red;"> ANUJ SHARMA </span> </p>
+</div>
+</section>
+
+ </body>
+ </html>
